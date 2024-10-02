@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zouine Saad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlix</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /*style for body*/
+        body{
+            width: 750px;
+            margin: auto;
+            border: 1px solid rgba(0, 0, 0, 0.062);
+            font-family: "Lato", system-ui;
+  font-style: normal;
+        }
+        /*style for table*/
+        table{
+            border-spacing: 0px;
+            width: 70%;
+            height: 100vh;
+            margin: auto;
+            overflow: hidden;
+            background-color: orange;
+        }
+        /*style for h1 and h2*/
+        h1{
+            font-size: 16px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.322);
+        border-left: 2px solid  rgba(0, 0, 0, 0.322);
+        border-right: 2px solid  rgba(0, 0, 0, 0.322);
+        width: 130px;
+        margin: auto;
+  font-weight: 300;
+        }   
+        h2{
+            margin-left: 12em;
+            margin-top: 1.3em;
+        } 
+        /*style for .main td and image-1 and imag-2*/
+        .main td{
+            text-align: center;
+        }
+        .image-1{
+            max-width: 110px;
+            margin-top: 0.6em;
+            margin-left: -  1em;
+            float: left;
+        }
+        .image-2{
+            max-width: 400px;
+            border-radius: 5px 5px 8px 8px;
+            margin: 2em 0em 2em 0em;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* style for button */ 
+        .button-1,.button-2{
+            display: block;
+            margin: 1em auto 1em auto;
+            border: none;
+            background-color: rgba(15, 14, 12, 0.897);
+            height: 2em;
+            border-radius: 6px;
+            color: rgba(255, 255, 255, 0.918);
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+        .button-1{
+            width: 5em;
+            margin-bottom: 1.5em;
+        }
+        .button-2{
+            width: 15em;
+            margin-top: 3em;
+        }
+         .button-2:hover, .button-1:hover{
+            background-color:  rgba(15, 14, 12, 0.582);
+            cursor: pointer;
+        }
+        /*style for paraghraph*/
+        p{
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.4em;
+            padding: 0px 9px 0px 9px;
+            word-spacing: 0.2em;
+            color: rgba(11, 11, 12, 0.692);
+        }
+        .p-1{
+            margin-top: 1em;
+        }
+        .p-2{
+            font-weight: 800;
+            color: rgba(0, 0, 0, 0.733);
+        }
+        /* style for footer*/
+        .footer{
+            text-align: center;
+        }
+        .footer td{
+            padding-top: 3em;
+        }
+        .footer td p{
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(11, 11, 12, 0.774);
+        }
+        a{
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #041f47;
+        }
+        /*style for mobile*/
+        @media (max-width: 600px){
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                margin:auto;
+                overflow-x: hidden;
+            }
+            table{
+                width: 100%;
+                margin:auto;
+                border: 3px solid orange;
+            }
+            h1{
+                font-size: 14px;
+                text-align: center;
+            }
+            h2{
+                font-size: 16px;
+                text-align: center;
+                margin-top: 3em;
+                margin-left: 14em;
+            }
+            .image-1{
+                max-width: 30%;
+                height: auto;
+            }
+            .image-2{
+                max-width: 80%;
+                height: auto;
+            }
+            p{
+               padding: 0px 5px;
+               word-spacing: normal;
+               font-size: 14px;
+            }
+            button:focus{
+                background-color:  rgba(15, 14, 12, 0.582);
+                cursor: none;
+            }
+            a:focus{
+                color: rgba(0, 0, 255, 0.575);
+                text-decoration: none;
+            }
+        }
+        /*style ipad*/
+        @media (min-width: 600px) and (max-width: 1024px) {
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                margin:auto;
+                overflow-x: hidden;
+            } 
+            table{
+                width: 100%;
+                margin:auto;
+            }
+            h1{
+                font-size: 16px;
+                width: 160px;
+            }
+            h2{
+                margin-left: 24em;
+            }
+            p{
+                font-size: 17px;
+            }
+            .image-2{
+                max-width: 70%;
+            }
+            .button-1{
+                width: 6em;
+            }
+            .button-2{
+                width: 17em;
+            }
+            button:focus{
+                cursor: none;
+                background-color:  rgba(15, 14, 12, 0.582);
+            }
+            a:focus{
+                color: rgba(0, 0, 255, 0.575);
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--head-->
+        <tr class="header">
+            <th>
+                <h1>Limited offer</h1>
+                <img src="image/Edufix.png" alt="image for educFix online courses" class="image-1">
+                <h2>20%<br> Off</h2>
+            </th>
+            
+        </tr>
+        <!--main-->
+        <tr class="main">
+            <td>
+                <p class="p-1">This is a special offer for you to develop your skills and grow your career with our comprehensive Digital Marketing Course!</p>
+                <img src="image/course.png" alt="" class="image-2">
+                <button class="button-1">Buy now</button>
+                <p>
+                    Whether you're a beginner or looking to enhance your expertise, this course covers everything from:
+                    <span class="p-2">Google Ads</span>,
+                    <span class="p-2">Facebook Ads</span>,
+                    <span class="p-2">Instagram Ads</span>,
+                    <span class="p-2">TikTok Ads</span>,
+                    <span class="p-2">Snapchat Ads</span>
+                    and 
+                    <span class="p-2">Email Marketing</span>.
+                    Don't miss out on the opportunity to become a Digital Marketing Expert.
+                </p>
+                 <button class="button-2">Start your learning journey!</button>
+            </td>
+        </tr>
+        <!--footer-->
+        <tr class="footer">
+            <td>
+                <p>Thank you for choosing EduFlix!</p>
+                <p>If you have any questions or need assistance,contact us at:
+                    <a href="#">Eduflix.support@flix.com</a>
+                </p>
+                <p>
+                    Follow us on social media:
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">facebook</a>
+                </p>
+                <p>Copyright © 2024 EduFlix. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
